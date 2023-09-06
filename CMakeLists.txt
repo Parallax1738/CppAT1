@@ -5,6 +5,10 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(Assignments
-        AT1.cpp
-        AT1.h)
+add_executable(
+        Assignments
+        Contact.cpp
+        Contact.h
+        Node.h
+        Node.cpp
+)

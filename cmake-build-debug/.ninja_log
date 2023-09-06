@@ -1,2 +1,16 @@
 # ninja log v5
 1	500	7149093637165719	CMakeFiles/Assignments.dir/AT1.cpp.obj	83812f2551c1b633
+6	190	7156644428144941	CMakeFiles/Assignments.dir/Node.cpp.obj	5e63211e560f36c
+0	374	7156644430002977	CMakeFiles/Assignments.dir/Contact.cpp.obj	7799963237e5d081
+10	106	7156718327676459	CMakeFiles/Assignments.dir/Node.cpp.obj	5e63211e560f36c
+4	313	7156718329742639	CMakeFiles/Assignments.dir/Contact.cpp.obj	7799963237e5d081
+313	432	7156718330910553	Assignments.exe	929e859bce1117f
+3	383	7156721871080431	CMakeFiles/Assignments.dir/Contact.cpp.obj	7799963237e5d081
+385	500	7156721872205906	Assignments.exe	929e859bce1117f
+5	549	7156847538172953	CMakeFiles/Assignments.dir/Contact.cpp.obj	7799963237e5d081
+4	393	7156847706068294	CMakeFiles/Assignments.dir/Contact.cpp.obj	7799963237e5d081
+5	460	7156848911198696	CMakeFiles/Assignments.dir/Contact.cpp.obj	7799963237e5d081
+462	614	7156848912678022	Assignments.exe	929e859bce1117f
+12	116	7156857548625539	CMakeFiles/Assignments.dir/Node.cpp.obj	5e63211e560f36c
+5	697	7156857554396599	CMakeFiles/Assignments.dir/Contact.cpp.obj	7799963237e5d081
+697	924	7156857556570233	Assignments.exe	929e859bce1117f
