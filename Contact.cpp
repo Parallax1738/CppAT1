@@ -3,11 +3,10 @@
 // Constructor Attributes include ( name, age, human ).
 Contact::Contact(std::string name, int age, bool human)
     // Constructor Parameters are set equal to the Attributes.
-    : name(std::move(name)), age(age), human(human)
+    : name(name), age(age), human(human)
     {
 
     }
-
 // ( Public ) Get method returns value of ( Private ) attribute ( e.g. name ).
 std::string Contact::getName() const
 {

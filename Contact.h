@@ -25,13 +25,3 @@ public:
     int getAge() const;
     bool isHuman() const;
 };
-
-// Testing
-Contact myContact("John Doe", 30, true);
-
-int main() {
-  std::cout << "Name: " << myContact.getName() << std::endl;
-   std::cout << "Age: " << myContact.getAge() << std::endl;
-   std::cout << "Human: " << (myContact.isHuman() ? "Yes" : "No") << std::endl;
-   return 0;
-}

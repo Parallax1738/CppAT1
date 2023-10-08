@@ -63,6 +63,13 @@ build CMakeFiles/Assignments.dir/Node.cpp.obj: CXX_COMPILER__Assignments_unscann
   OBJECT_DIR = CMakeFiles\Assignments.dir
   OBJECT_FILE_DIR = CMakeFiles\Assignments.dir
 
+build CMakeFiles/Assignments.dir/main.cpp.obj: CXX_COMPILER__Assignments_unscanned_Debug C$:/Users/Max_d/OneDrive/Desktop/2023-VE03-ICTPRG547-Apply$ Advanced$ Programming$ Skills$ in$ Another$ Language/Assignments/main.cpp || cmake_object_order_depends_target_Assignments
+  DEP_FILE = CMakeFiles\Assignments.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Max_d/OneDrive/Desktop/2023-VE03-ICTPRG547-Apply Advanced Programming Skills in Another Language/Assignments/."
+  OBJECT_DIR = CMakeFiles\Assignments.dir
+  OBJECT_FILE_DIR = CMakeFiles\Assignments.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Assignments
@@ -71,7 +78,7 @@ build CMakeFiles/Assignments.dir/Node.cpp.obj: CXX_COMPILER__Assignments_unscann
 #############################################
 # Link the executable Assignments.exe
 
-build Assignments.exe: CXX_EXECUTABLE_LINKER__Assignments_Debug CMakeFiles/Assignments.dir/Contact.cpp.obj CMakeFiles/Assignments.dir/Node.cpp.obj
+build Assignments.exe: CXX_EXECUTABLE_LINKER__Assignments_Debug CMakeFiles/Assignments.dir/Contact.cpp.obj CMakeFiles/Assignments.dir/Node.cpp.obj CMakeFiles/Assignments.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Assignments.dir

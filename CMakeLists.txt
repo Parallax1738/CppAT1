@@ -11,4 +11,5 @@ add_executable(
         Contact.h
         Node.h
         Node.cpp
+        main.cpp
 )
