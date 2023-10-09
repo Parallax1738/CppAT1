@@ -7,7 +7,7 @@
 int main() {
     linkedList* l = new linkedList();
     l -> append(Contact("Max", 20, true));
-    l -> append(Contact("John", 30, false));
+    l -> append(Contact("Jimmy", 30, false));
     l -> print();
     delete l;
     return 0;
