@@ -12,3 +12,7 @@ int main() {
     delete l;
     return 0;
 }
+// MENU
+
+// Search
+// Sorting
