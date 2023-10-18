@@ -10,4 +10,3 @@ public:
     node* Search(linkedList* l);
     void Sort(linkedList* l);
 };
-
