@@ -14,4 +14,6 @@ add_executable(
         main.cpp
         Menu2.h
         Menu2.cpp
+        Hash.cpp
+        Hash.h
 )

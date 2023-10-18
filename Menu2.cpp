@@ -48,11 +48,72 @@ void Menu2::Menu() {
                 std::cout << std::endl;
                 break;
             }
-            case 4:
+            case 4: {
                 // TREE IMPLEMENTATION ( RILEY )
-            case 5:
-                // HASHING IMPLEMENTATION ( HARRY )
+            }
+            case 5: {
+                hash* Hashy = new hash();
+                Hashy->AddItem("Harry", 20, true);
+                Hashy->AddItem("Jimmy", 30, false);
+                Hashy->AddItem("Kevin", 21, false);
+                Hashy->AddItem("Vex", 16, true);
+                Hashy->AddItem("Jett", 3, false);
+                Hashy->AddItem("Noah", 42, true);
+
+                std::cout << "Sub Menu\n";
+                std::cout << "6) Display\n";
+                std::cout << "7) Add\n";
+                std::cout << "8) Search\n";
+                std::cout << "9) Exit\n";
+                std::cout << ">>";
+
+                int subChoice;
+                {
+                    while (true) {
+                    std::cin >> subChoice;
+                    switch (subChoice) {
+                        case 6: {
+                            Hashy->PrintTable();
+                            //Hashy->PrintItemsInIndex(7);
+                            break;
+                        }
+                        case 7: {
+                            std::string name;
+                            int age;
+                            bool human;
+
+                            std::cout << "Enter name: ";
+                            std::cin >> name;
+                            std::cout << "Enter age: ";
+                            std::cin >> age;
+                            std::cout << "Is the person human? (1 for Yes, 0 for No): ";
+                            std::cin >> human;
+
+                            Hashy->AddItem(name, age, human);
+                            Hashy->PrintTable();
+                            break;
+                        }
+                        case 8: {
+                            std::string name = "";
+                            while(name != "exit") {
+                                std::cout << "Search for \n";
+                                std::cin >> name;
+                                if(name != "exit") {
+                                    Hashy->FindName(name);
+                                }
+                            }
+                            break;
+                        }
+                        default: {
+                            delete Hashy;
+                            return;
+                        }
+                    }
+                    }
+                }
                 break;
+            }
+
             default:
                 delete l;
                 return;
@@ -102,4 +163,5 @@ void Menu2::Sort(linkedList* l) {
         std::cout << "Name: " << contact.getName() << ", Age: " << contact.getAge() << "\n";
     }
 }
+
 
