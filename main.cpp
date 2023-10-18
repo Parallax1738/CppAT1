@@ -1,4 +1,5 @@
 #include "Menu2.h"
+#include "Hash.h"
 
 int main() {
     Menu2* m = new Menu2();
