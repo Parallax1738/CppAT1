@@ -7,7 +7,6 @@ linkedList::linkedList() {
     start = nullptr;
 }
 linkedList::~linkedList() {
-    std::cout << "List Cleared";
     node* n = start;
     while(n)
     {
@@ -41,7 +40,7 @@ void linkedList::print() {
     while (p) {
         std::cout << "Name: " << p->contact.getName() << std::endl;
         std::cout << "Age: " << p->contact.getAge() << std::endl;
-        std::cout << "Human: " << (p->contact.isHuman() ? "Yes" : "No") << std::endl;
+        std::cout << "Human: " << (p->contact.isHuman() ? "Yes" : "No") << std::endl << std::endl;
         p = p -> pNext;
     }
 }

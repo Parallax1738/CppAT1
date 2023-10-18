@@ -12,4 +12,6 @@ add_executable(
         Node.h
         Node.cpp
         main.cpp
+        Menu2.h
+        Menu2.cpp
 )
