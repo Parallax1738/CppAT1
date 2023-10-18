@@ -16,4 +16,6 @@ add_executable(
         Menu2.cpp
         Hash.cpp
         Hash.h
+        NodeT.h
+        NodeT.cpp
 )

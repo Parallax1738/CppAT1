@@ -3,6 +3,7 @@
 //
 
 #include "Menu2.h"
+#include "NodeT.h"
 
 void Menu2::Menu() {
     linkedList* l = new linkedList();
@@ -18,7 +19,7 @@ void Menu2::Menu() {
         std::cout << "1) Display\n";
         std::cout << "2) Search\n";
         std::cout << "3) Sort\n";
-        std::cout << "4) View Tree (NULL)\n";
+        std::cout << "4) View Tree\n";
         std::cout << "5) Hash Table (NULL)\n";
         std::cout << "6) Exit\n";
         std::cout << ">>";
@@ -49,7 +50,8 @@ void Menu2::Menu() {
                 break;
             }
             case 4: {
-                // TREE IMPLEMENTATION ( RILEY )
+                nodetree();
+                break;
             }
             case 5: {
                 hash* Hashy = new hash();
@@ -162,6 +164,59 @@ void Menu2::Sort(linkedList* l) {
     for (const Contact& contact : contacts) {
         std::cout << "Name: " << contact.getName() << ", Age: " << contact.getAge() << "\n";
     }
+}
+void Menu2::nodetree()
+{
+    NodeT n1("Harry");
+    NodeT n2("Jimmy");
+    NodeT n3("Kevin");
+    NodeT n4("Vex");
+    NodeT n5("Jett");
+    NodeT n6("Noah");
+
+
+    std::cout << "connecting nodes" << std::endl;
+
+    // Connecting the nodes
+    n1.left = &n2;
+    n2.parent = &n1;
+
+    n3.parent = &n1;
+    n1.right = &n3;
+
+    n4.parent = &n2;
+    n2.left = &n4;
+
+    n5.parent = &n2;
+    n2.right = &n5;
+
+    n6.parent = &n3;
+    n3.left = &n6;
+
+    std::cout << "printing tree iteration" << std::endl;
+    // printing the tree
+    NodeT* curr = &n1;
+    std::cout << "    " << curr->data << std::endl;
+    curr = curr->left;
+    std::cout << " " << curr->data << " ";
+    curr = curr->parent;
+    curr = curr->right;
+    std::cout << curr->data << std::endl;
+    curr = curr->parent;
+    curr = curr->left;
+    curr = curr->left;
+    std::cout << curr->data << " ";
+    curr = curr->parent;
+    curr = curr->right;
+    std::cout << curr->data << " ";
+    curr = curr->parent;
+    curr = curr->parent;
+    curr = curr->right;
+    curr = curr->left;
+    std::cout << curr->data << " ";
+
+    std::cout << std::endl;
+
 }
 
 
