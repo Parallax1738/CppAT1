@@ -56,6 +56,7 @@ void hash::PrintTable() {
         }
     }
 }
+/*
 void hash::PrintItemsInIndex(int index) {
     item* Ptr = HashTable[index];
     if(Ptr->name == "empty") {
@@ -70,7 +71,7 @@ void hash::PrintItemsInIndex(int index) {
             Ptr = Ptr->next;
         }
     }
-}
+}*/
 int hash::Hash(std::string key) {
     int hash = 0;
     int index;
