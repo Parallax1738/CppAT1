@@ -20,7 +20,7 @@ void Menu2::Menu() {
         std::cout << "2) Search\n";
         std::cout << "3) Sort\n";
         std::cout << "4) View Tree\n";
-        std::cout << "5) Hash Table (NULL)\n";
+        std::cout << "5) Hash Table\n";
         std::cout << "6) Exit\n";
         std::cout << ">>";
         int choice;
@@ -63,10 +63,9 @@ void Menu2::Menu() {
                 Hashy->AddItem("Noah", 42, true);
 
                 std::cout << "Sub Menu\n";
-                std::cout << "6) Display\n";
-                std::cout << "7) Add\n";
-                std::cout << "8) Search\n";
-                std::cout << "9) Exit\n";
+                std::cout << "6) Add\n";
+                std::cout << "7) Search\n";
+                std::cout << "8) Exit\n";
                 std::cout << ">>";
 
                 int subChoice;
@@ -75,11 +74,6 @@ void Menu2::Menu() {
                     std::cin >> subChoice;
                     switch (subChoice) {
                         case 6: {
-                            Hashy->PrintTable();
-                            //Hashy->PrintItemsInIndex(7);
-                            break;
-                        }
-                        case 7: {
                             std::string name;
                             int age;
                             bool human;
@@ -95,7 +89,7 @@ void Menu2::Menu() {
                             Hashy->PrintTable();
                             break;
                         }
-                        case 8: {
+                        case 7: {
                             std::string name = "";
                             while(name != "exit") {
                                 std::cout << "Search for \n";
