@@ -167,12 +167,12 @@ void Menu2::Sort(linkedList* l) {
 }
 void Menu2::nodetree()
 {
-    NodeT n1("Harry");
-    NodeT n2("Jimmy");
-    NodeT n3("Kevin");
-    NodeT n4("Vex");
-    NodeT n5("Jett");
-    NodeT n6("Noah");
+    NodeT n1 = NodeT(Contact("Harry", 1, true));
+    NodeT n2 = NodeT(Contact("Jett", 1, true));
+    NodeT n3 = NodeT(Contact("Riley", 1, true));
+    NodeT n4 = NodeT(Contact("James", 1, true));
+    NodeT n5 = NodeT(Contact("Dan", 1, true));
+    NodeT n6 = NodeT(Contact("Max", 1, true));
 
 
     std::cout << "connecting nodes" << std::endl;
@@ -196,24 +196,24 @@ void Menu2::nodetree()
     std::cout << "printing tree iteration" << std::endl;
     // printing the tree
     NodeT* curr = &n1;
-    std::cout << "    " << curr->data << std::endl;
+    std::cout << "    " << curr->contact.getName() << std::endl;
     curr = curr->left;
-    std::cout << " " << curr->data << " ";
+    std::cout << " " << curr->contact.getName() << "  ";
     curr = curr->parent;
     curr = curr->right;
-    std::cout << curr->data << std::endl;
+    std::cout << curr->contact.getName() << std::endl;
     curr = curr->parent;
     curr = curr->left;
     curr = curr->left;
-    std::cout << curr->data << " ";
+    std::cout << curr->contact.getName() << " ";
     curr = curr->parent;
     curr = curr->right;
-    std::cout << curr->data << " ";
+    std::cout << curr->contact.getName() << " ";
     curr = curr->parent;
     curr = curr->parent;
     curr = curr->right;
     curr = curr->left;
-    std::cout << curr->data << " ";
+    std::cout << curr->contact.getName() << " ";
 
     std::cout << std::endl;
 

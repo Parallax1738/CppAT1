@@ -1,20 +1,21 @@
 #ifndef TNODE_H
 #define TNODE_H
 
+
+#include "Contact.h"
 #include <string>
 
 class NodeT
 {
 public:
+    NodeT(Contact Contact);
+
   NodeT* left;
   NodeT* right;
   NodeT* parent;
-  std::string data;
+  Contact contact;
 
-  NodeT();
-  NodeT(std::string data_);
-
-  void init(std::string data_);
+  void init(Contact data_);
 
 };
 
